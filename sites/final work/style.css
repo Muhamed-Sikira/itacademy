@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background: #353535;
+}
+.wrapper{
+    width: 430px;
+    margin: auto;
+    padding: 10px;
+}
+.header{
+    width: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.header h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.logo img{
+    width: 100px;
+    margin: auto;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main .naslov{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.wreper{
+    background: black;
+    border-radius: 25px;
+    padding: 15px;
+    margin: auto;
+    width: 200px;
+}
+.main .slika > img{
+    border-radius: 999px;
+    width: 200px;
+    clip-path: circle(40%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main .txt{
+    font-size: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+.paragraf{
+    margin: 20px auto;
+    text-align: center;
+    width: 350px;
+    font-size: 20px;
+}
+.sidebar{
+    width: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.sidebar h2{
+    margin: 5px;
+    padding: 5px;
+    color: yellow;
+}
+.sidebar p{
+    margin: 10px;
+    padding: 10px;
+    color: wheat;
+}
+.naslov{
+    margin: 20px;
+}
+.footer{
+    width: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+.text{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.radovi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+@media only screen and (min-width: 768px){
+    .wrapper{
+        background: #1F1F1F;
+        width: 700px;
+        overflow: hidden;
+    }
+    .header{
+        overflow: hidden;
+    }
+    .header h1{
+        float: left;
+        margin-top: 15px;
+    }
+    .header .logo img{
+        float: right;
+        width: 50px;
+        margin: 5px;
+    }
+    .logo{
+        text-align: right;
+    }
+    .nav{
+        text-align: left;
+    }
+    .main{
+        float: left;
+        width: 400px;
+    }
+    .paragraf{
+        margin-top: 20px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .sidebar{
+        float: right;
+        width: 300px;
+    }
+    .moji_radovi{
+        clear: both;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        clear: both;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .wrapper{
+        width: 1100px;
+    }
+    .header{
+        margin: 0;
+        padding: 0;
+    }
+    .header h1{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .header .logo img{
+        margin: 15px 20px;
+        width: 50px;
+    }
+    .main{
+        float: left;
+        width: 600px;
+        text-align: left;
+        overflow: hidden;
+        margin-bottom: 20px;
+        height: 600px;
+    }
+    .main .naslov{
+        display: block;
+        margin-left: 25px;
+    }
+    .kartica{
+        margin: 10px;
+        float: left;
+    }
+    .kartica .txt{
+        padding: 10px;
+    }
+    .kartica h3{
+        margin-bottom: 5px;
+    }
+    .kartica p{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .paragraf{
+        float: right;
+        width: 300px;
+        padding: 10px;
+        text-align: left;
+        font-size: 15px;
+        margin: 10px;
+    }
+    .sidebar{
+        float: right;
+        width: 450px;
+    }
+    .sidebar h2{
+        margin: 5px;
+    }
+    .sidebar p{
+        font-size: 17px;
+    }
+    .footer{
+        clear: both;
+        padding: 10px;
+    }
+    .footer p{
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}
+@media only screen and (min-width: 1600px){
+    .wrapper{
+        width: 1500px;
+    }
+    .main{
+        width: 850px;
+    }
+    .paragraf{
+        float: left;
+        font-size: 16.1px;
+    }
+    .sidebar{
+        width: 650px;
+    }
+}
+@media only screen and (min-width: 1900px){
+    .wrapper{
+        width: 1800px;
+    }
+    .main{
+        width: 800px;
+    }
+    .paragraf{
+        float: left;
+        margin-left: 20px;
+        font-size: 20px;
+        width: 500px;
+    }
+    .sidebar{
+        width: 800px;
+    }
+}
